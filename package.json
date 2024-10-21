@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "vite.config.js",
+  "homepage": "https://Martialdepaul.github.io/react/",  
   "dependencies": {
     "ansi-styles": "^3.2.1",
     "array-union": "^2.1.0",
@@ -32,7 +33,6 @@
     "find-up": "^4.1.0",
     "fs-extra": "^11.2.0",
     "gensync": "^1.0.0-beta.2",
-    "gh-pages": "^6.2.0",
     "glob-parent": "^5.1.2",
     "globals": "^11.12.0",
     "globby": "^11.1.0",
@@ -85,12 +85,14 @@
     "vite": "^4.5.5",
     "yallist": "^3.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite",                
+    "build": "vite build",        
+    "serve": "vite preview",     
+    "deploy": "gh-pages -d dist"  
   },
   "keywords": [],
   "author": "",
