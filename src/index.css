@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  color: #ebe7ef;
+  background: radial-gradient(#280a48, #20043d);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 0 1.5rem 0;
+  color: #a18aba;
+  transition: transform 0.4s ease, color 0.4s ease; /* Animation sur le titre */
+}
+
+main h2:hover {
+  transform: translateY(-10px) rotate(-2deg); /* Légère translation vers le haut et rotation */
+  color: #f0e68c; /* Changer la couleur au survol */
+}
+
+#examples {
+  margin: 3rem auto;
+}
+
+#examples h2 {
+  text-align: left;
+}
+
+#examples menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease,
+    box-shadow 0.4s ease; /* Transition plus fluide */
+  position: relative; /* Position relative pour le pseudo-élément */
+}
+
+#examples menu button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Arrière-plan léger au survol */
+  color: #ebe7ef;
+  transform: translateY(-4px) scale(1.05); /* Légère translation vers le haut et agrandissement */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Ombre plus prononcée */
+}
+
+#examples menu button:hover::before {
+  content: ""; /* Création d'un pseudo-élément pour l'effet de soulèvement */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: rgba(
+    121,
+    37,
+    211,
+    0.3
+  ); /* Couleur d'effet de soulèvement */
+  z-index: -1; /* Derrière le bouton */
+  transition: opacity 0.4s ease; /* Animation de l'opacité */
+}
+
+#examples menu button.active {
+  background-color: #7925d3;
+  color: #ebe7ef;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #2f1d43;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out; /* Transition pour les changements d'état */
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+#tab-content code {
+  font-size: 1rem;
+}
+
+/* Ajout d'animation aux images */
+img {
+  max-width: 100%; /* Assurez-vous que les images s'ajustent à la taille de leur conteneur */
+  height: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transition pour l'image */
+  border-radius: 10px; /* Coins arrondis pour un effet plus doux */
+}
+
+img:hover {
+  transform: scale(1.1) rotate(2deg); /* Agrandir l'image au survol et légère rotation */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Ombre plus accentuée au survol */
+}
