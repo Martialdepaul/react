@@ -12,7 +12,7 @@ Bienvenue dans mon projet **Essential React Components** ! 🎉 Ce projet est un
 - **Contenu Dynamique** : 🌈 Grâce à l'utilisation des états et des props, j'ai créé des interfaces réactives qui changent en fonction des interactions de l'utilisateur.
 
 ## 🎨 Aperçu 🖼️
-Voici quelques captures d'écran de l'application :  
+Voici la capture d'écran de l'application :  
 ![Aperçu de Elegant-Context](./src/assets/img.png)
 
 ## 📂🚀 Installation
